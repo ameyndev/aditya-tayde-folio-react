@@ -12,18 +12,16 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path="/designs" element={<Designs />} />
-            <Route path="/video-videography" element={<Videos />} />
-            <Route path="/photography" element={<Photography />} />
-          </Routes>
-          <Footer />
-        </Router>
-      </BrowserRouter>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path="/designs" element={<Designs />} />
+          <Route path="/video-videography" element={<Videos />} />
+          <Route path="/photography" element={<Photography />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   )
 }
